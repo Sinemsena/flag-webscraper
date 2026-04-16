@@ -4,14 +4,14 @@ scraper aracıdır.
 
 ## Kullanım
 
-1. Yardım ve Seçim Ekranı
+1. Yardım ve Seçim Ekranı:
 Herhangi bir parametre vermeden çalıştırdığınızda kullanılabilir flagleri ve site listesini görüntülenir:
 
 ```bash
 
 go run main.go
 ```
-2. Temel Tarama
+2. Temel Tarama:
 Belirlenen sitenin tüm bilgilerini (Başlık, Açıklama, Tarih) getirir:
 
 ```bash
@@ -19,7 +19,7 @@ Belirlenen sitenin tüm bilgilerini (Başlık, Açıklama, Tarih) getirir:
 go run main.go -1
 ```
 
-3. Filtreleme Seçenekleri
+3. Filtreleme Seçenekleri:
 
 Tarih Filtreleme: Tarih bilgisini gizlemek için -date kullanılır.
 
@@ -40,4 +40,4 @@ go run main.go -1 -description
 go run main.go -1 -date -description
 ```
 ## Kayıt Sistemi
-Yapılan her tarama, projenin kök dizininde otomatik olarak oluşturulan /sonuc klasörüne, o anki saat damgasıyla .txt formatında kaydedilir.
+Yapılan her tarama, projenin kök dizininde otomatik olarak oluşturulan /sonuc klasörüne, o anki saat damgasıyla .txt formatında kaydediliyor.
