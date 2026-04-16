@@ -7,31 +7,37 @@ scraper aracıdır.
 1. Yardım ve Seçim Ekranı
 Herhangi bir parametre vermeden çalıştırdığınızda kullanılabilir flagleri ve site listesini görüntülenir:
 
-'''bash
-go run main.go
+```bash
 
+go run main.go
+```
 2. Temel Tarama
 Belirlenen sitenin tüm bilgilerini (Başlık, Açıklama, Tarih) getirir:
 
-'''bash
+```bash
+
 go run main.go -1
+```
 
 3. Filtreleme Seçenekleri
 
 Tarih Filtreleme: Tarih bilgisini gizlemek için -date kullanılır.
 
-'''bash
+```bash
+
 go run main.go -1 -date
+```
+ * Açıklama Filtreleme: Açıklama bilgisini gizlemek için -description kullanılır.
 
-Açıklama Filtreleme: Açıklama bilgisini gizlemek için -description kullanılır.
+```bash
 
-'''bash
 go run main.go -1 -description
+```
+ * Tam Filtreleme: Sadece haber başlıklarını görmek için her iki parametreyi de ekleyerek filtreleme yapılır.
 
-Tam Filtreleme: Sadece haber başlıklarını görmek için her iki parametreyi de ekleyerek filtreleme yapılır.
+```bash
 
-'''bash
 go run main.go -1 -date -description
-
-#Kayıt Sistemi
+```
+## Kayıt Sistemi
 Yapılan her tarama, projenin kök dizininde otomatik olarak oluşturulan /sonuc klasörüne, o anki saat damgasıyla .txt formatında kaydedilir.
